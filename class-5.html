@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial,sans-serif;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: linear-gradient(rgb(168, 168, 255), rgb(182, 255, 233));
+            padding: 5px;
+        }
+
+        form{
+            max-width: 50%;
+            margin: 2% auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 15px;    
+        }
+
+        label{
+            margin-bottom: 2px;
+            color: black;
+            font-weight: bold;
+            display: block;
+        }
+
+         label, textarea, input{
+            width: 95%;
+            padding: 2px;
+            border-radius: 5px;
+         }
+          
+         label, textarea, select{
+            margin-bottom: 10px;
+         }
+
+         .box-model{
+            border: 2px solid rgb(0, 225, 255);
+            background-color: #e3dbff;
+            height: 26px;
+         }
+
+         .box-model:hover{
+            background-color:rgb(255, 255, 255);
+         }
+
+         .text-style{
+            font-size: 15px;
+         }
+
+         select.box-model{
+            width: 110px;
+            height: 25px;
+         }
+
+         button{
+            font-size: 20px;
+            color: white;
+            background-color: black;
+            border: 1px solid rgb(0, 225, 255);
+            border-radius: 5px;
+         }
+
+         button:hover{
+            background-color: rgb(61, 164, 248);
+            color: rgb(0, 0, 0);
+         }
+
+         .last-div{
+            text-align: center;
+            height: 40px;
+         }
+
+         legend{
+            text-align: center;
+            font-size: 25px;
+            color: white;
+         }
+
+         #student{
+            height: 12px;
+         }
+
+         #student:hover{
+            height: 14px;
+         }
+
+         .last-label{
+            font-size: 30px;
+         }
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Registration Form</legend>
+                <div>
+                    <label class="text-style" for="firstname">First Name</label>
+                    <input class="box-model" id="firstname" type="text" name="firstname" placeholder="First Name" required>
+                </div>
+                <div>
+                    <label class="text-style" for="listname">List Name</label>
+                    <input class="box-model" id="listname" type="text" name="listname" placeholder="List Name" required>
+                </div>
+                <div>
+                    <label class="text-style" for="email">Email</label>
+                    <input class="box-model" id="email" type="text" name="email" placeholder="Your Email" required>
+                </div>
+                <div>
+                    <label class="text-style" for="age">Age</label>
+                    <input class="box-model" id="age" type="number" name="age" min="5" value="5" required>
+                </div>
+                <div>
+                    <label class="text-style" for="phonenumber">Phone Number</label>
+                    <input class="box-model" id="phonenumber" type="text" name="phonenumber" placeholder="Phone Number" required>
+                </div>
+                <div>
+                    <label class="text-style" for="password">Password</label>
+                    <input class="box-model" id="password" type="password" name="password" placeholder="your Password" minlength="6" maxlength="10" required>
+                </div>
+                <div>
+                    <label class="text-style" for="password">Confirm Password</label>
+                    <input class="box-model" id="password" type="password" name="password" placeholder="Confirm Password" minlength="6" maxlength="10" required>
+                </div>
+                <br>
+                <div>
+                    <label class="text-style" for="student">Student</label>
+                    <input class="box-model" id="student" type="checkbox" name="student" required>
+                </div>
+                <div>
+                    <label class="text-style" for="class">Class</label>
+                    <select class="box-model">
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="text-style" for="country">Country</label>
+                    <select class="box-model">
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="gender">Gender</label>
+                    <label class="text-style" for="male">Male</label>
+                    <input id="male" type="radio" name="gender">
+                    <label class="text-style" for="female">Female</label>
+                    <input id="female" type="radio" name="gender">
+                    <label class="text-style" for="other">Other</label>
+                    <input id="other" type="radio" name="gender" value="other">
+                </div>
+                <div class="last-div">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
